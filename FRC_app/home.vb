@@ -2,6 +2,9 @@
 
 Public Class home
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles login.Click
+        Dim login As login
+        login = New login()
+        login.Show()
 
 
     End Sub
@@ -13,35 +16,11 @@ Public Class home
 
     'MySQL
 
-    Public KDBconn As New MySqlConnection
-    Public KDBconnBackUp As New MySqlConnection
-    Public KDBconnLib As New MySqlConnection
-    Public Sub GetKDBConn()
-        Dim connString As String = "Database=otgoo_17765387_app;Data Source=sql112.clouds.twgogo.org;User Id=otgoo_17765387;Password=frc6083;CharSet=utf8"
-
-        Dim tmpSql As String
-        If KDBconn.State = ConnectionState.Open Then KDBconn.Close() '若第二次重複連線需關閉
-        KDBconn = New MySqlConnection(connString)
-        KDBconn.Open()
-
-        If KDBconn Is Nothing Then
-            If connString = "" Then
-                MsgBox("未設定連線字串" & connString)
-            Else
-                KDBconn = New MySqlConnection(connString)
-                KDBconn.Open() '"正常連結資料庫"
-                MsgBox("ok")
-            End If
-        Else
-        End If
-        If KDBconn Is Nothing Then MsgBox("MYSQL資料庫連線失敗")
-    End Sub
+    Dim myConnectionString As String
+    Dim oTable As Data.DataTable
+    Dim oDbAdapter As MySqlDataAdapter
 
     Public Sub mysql()
-        Dim myConnectionString As String
-        Dim oTable As Data.DataTable
-        Dim oDbAdapter As MySqlDataAdapter
-
         myConnectionString = "server=sql6.freemysqlhosting.net;" _
                       & "uid=sql6115059;" _
                       & "pwd=J81PZFkQ23;" _

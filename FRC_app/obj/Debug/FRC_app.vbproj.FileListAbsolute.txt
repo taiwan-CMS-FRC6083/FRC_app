@@ -10,3 +10,4 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\FRC_app\FRC_app\obj\Debug\FR
 C:\Users\user\Documents\Visual Studio 2015\Projects\FRC_app\FRC_app\obj\Debug\FRC_app.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\FRC_app\FRC_app\obj\Debug\FRC_app.pdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\FRC_app\FRC_app\bin\Debug\MySql.Data.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\FRC_app\FRC_app\obj\Debug\FRC_app.login.resources
