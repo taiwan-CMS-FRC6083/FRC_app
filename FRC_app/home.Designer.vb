@@ -24,7 +24,7 @@ Partial Class home
     Private Sub InitializeComponent()
         Me.version = New System.Windows.Forms.Label()
         Me.logo = New System.Windows.Forms.PictureBox()
-        Me.login = New System.Windows.Forms.Button()
+        Me.login_button = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -50,15 +50,15 @@ Partial Class home
         Me.logo.TabIndex = 1
         Me.logo.TabStop = False
         '
-        'login
+        'login_button
         '
-        Me.login.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.login.Location = New System.Drawing.Point(912, 32)
-        Me.login.Name = "login"
-        Me.login.Size = New System.Drawing.Size(133, 61)
-        Me.login.TabIndex = 2
-        Me.login.Text = "Login"
-        Me.login.UseVisualStyleBackColor = True
+        Me.login_button.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.login_button.Location = New System.Drawing.Point(912, 32)
+        Me.login_button.Name = "login_button"
+        Me.login_button.Size = New System.Drawing.Size(133, 61)
+        Me.login_button.TabIndex = 2
+        Me.login_button.Text = "Login"
+        Me.login_button.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -96,7 +96,7 @@ Partial Class home
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.login)
+        Me.Controls.Add(Me.login_button)
         Me.Controls.Add(Me.version)
         Me.Controls.Add(Me.logo)
         Me.Font = New System.Drawing.Font("微軟正黑體", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
@@ -111,7 +111,7 @@ Partial Class home
 
     Friend WithEvents version As Label
     Friend WithEvents logo As PictureBox
-    Friend WithEvents login As Button
+    Friend WithEvents login_button As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button

@@ -1,16 +1,16 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class home
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles login.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles login_button.Click
         Dim login As login
         login = New login()
         login.Show()
 
 
     End Sub
-    Private Sub Button1_MouseEnter(sender As Object, e As EventArgs) Handles login.MouseEnter
-        login.Cursor = Cursors.No
-        login.Text = "Not avliable"
+    Private Sub Button1_MouseEnter(sender As Object, e As EventArgs) Handles login_button.MouseEnter
+        'login_button.Cursor = Cursors.No
+        'login_button.Text = "Not avliable"
 
     End Sub
 
@@ -43,5 +43,9 @@ Public Class home
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         mysql()
+    End Sub
+
+    Private Sub home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        login.loginstat = 0
     End Sub
 End Class
